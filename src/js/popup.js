@@ -992,7 +992,6 @@ Logic.registerPanel(REOPEN_IN_CONTAINER_PICKER, {
     document.getElementById("picker-title").textContent = "Reopen This Site in";
     const fragment = document.createDocumentFragment();
     const currentTab = await Utils.currentTab();
-    console.log(currentTab);
     const pickedFunction = function (identity) {
       const newUserContextId = Utils.userContextId(identity.cookieStoreId);
       Utils.reloadInContainer(
