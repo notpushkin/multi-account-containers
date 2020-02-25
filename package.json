@@ -37,6 +37,7 @@
   },
   "scripts": {
     "build": "npm test && cd src && web-ext build --overwrite-dest",
+    "webext": "web-ext run -s src/",
     "lint": "npm-run-all lint:*",
     "lint:addon": "addons-linter src --self-hosted",
     "lint:css": "stylelint src/css/*.css",
